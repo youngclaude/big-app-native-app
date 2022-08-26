@@ -14,4 +14,4 @@ At the end of the sprint (2 week period) Rene will merge the entire release into
 ## Developers
 - Rene Claude (Architecture, Frontend, Backend)
 - A
-- F
+- Francisco Orta (Frontend, Backend)
