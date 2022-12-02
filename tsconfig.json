@@ -1,6 +1,78 @@
 {
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
-    "strict": true
-  }
+    "jsx": "react",
+    "jsx": "react-jsx",
+    "allowJs": true /* Allow javascript files to be compiled. */,
+
+    "strict": false,
+    "baseUrl": "./*",
+    "paths": {
+      "@models": [
+        "models/index"
+      ],
+      "@models/*": [
+        ".src/models/*"
+      ],
+      "@api/*": [
+        ".src/api/*"
+      ],
+      "@errors": [
+        ".src/errors/index"
+      ],
+      "@errors/*": [
+        ".src/errors/*"
+      ],
+      "@utils/*": [
+        ".src/utils/*"
+      ],
+      "@hooks": [
+        ".src/hooks/index"
+      ],
+      "@hooks/*": [
+        ".src/hooks/*"
+      ],
+      "@components/*": [
+        ".src/Components/*"
+      ],
+      "@containers/*": [
+        "containers/*"
+      ],
+      "@navigation/*": [
+        "navigation/*"
+      ],
+      "@screens/*": [
+        ".src/Screens/*"
+      ],
+      "@forms": [
+        ".src/forms/index"
+      ],
+      "@forms/*": [
+        ".src/forms/*"
+      ],
+      "@modals": [
+        ".src/modals/index"
+      ],
+      "@modals/*": [
+        ".src/modals/*"
+      ],
+      "@assets/*": [
+        "assets/*"
+      ],
+      "@shared/*": [
+        "shared/*"
+      ],
+      "@src/*": [
+        "src/*"
+      ],
+    },
+  },
+  "exclude": [
+    "node_modules",
+    "babel.config.js",
+    "metro.config.js",
+    "jest.config.js",
+    "react-native.config.js",
+  ],
+  
 }
